@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+</head>
+<script type="text/javascript">
+	$(document).ready(function(){
+		//check the add click button
+		$("#btn1").click(function(){
+
+			var number=Number($('#num').text());
+			number=number+1;
+			$('#num').text(number);
+		})
+		$("#btn2").click(function(){
+
+			var number=Number($('#num').text());
+			number=number-1;
+			$('#num').text(number);
+		})
+
+	})
+</script>
+<style type="text/css">
+	body{
+		background-color: #00a65a;
+	}
+	div{
+		max-width: 300px;
+		margin: auto;
+
+	}
+	h1,p{
+		color: white;
+		font-size: 80px;
+	}
+	p{
+		text-align: center;
+	}
+	button{
+		background-color: darkred;
+		color: white;
+		width: 140px;
+		height: 30px;
+		padding: auto;
+		font-size: 20px;
+		cursor: pointer;
+	}
+</style>
+<body>
+	<div>
+		<h1>Button Counter</h1>
+	    <p id='num'>0</p>
+		<button id="btn1">Add</button>
+		<button id="btn2">Subtract</button>
+		
+	</div>
+	
+
+</body>
+</html>
